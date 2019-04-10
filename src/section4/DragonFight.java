@@ -7,16 +7,15 @@ import javax.swing.ImageIcon;
 public class DragonFight {
 	// 1. Create a main method and put all of the code below inside of it
 	public static void main(String[] args) {
-		
 		ImageIcon dragon = new ImageIcon("src/section4/dragonPicture.jpg");		
 		
 		JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "Dragon Fighter", 0, dragon);
 		// 2. Create a variable called "playerHealth" to store your health (set it equal to 100)
-	
+	int playerHealth = 100;
 		// 3. Create a variable called "dragonHealth" to store the dragon's health (set it equal to 100)
-		
+	int dragonHealth = 100;
 		// 4. Create a variable to hold the damage the player's attack does each round
-		
+	
 		// 5. Create a variable to hold the damage the dragon's attack does each round
 		
 		
@@ -59,7 +58,8 @@ public class DragonFight {
 	   //  15.  Else
 			
 			//-- Pop up a message that tells the their current health and the dragon's currently health (Bonus: Also display the amount of health that was lost for each player this round)
-			
+		
 		}
+	}
 	}
 

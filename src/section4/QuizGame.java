@@ -1,22 +1,40 @@
 package section4;
 
+import javax.swing.JOptionPane;
+
 public class QuizGame {
 	
 	public static void main(String[] args) {
 		
 		// 1.  Create a variable to hold the user's score 
-		
+		int score = 0;
 		// 2.  Ask the user a question 
-		
-		// 3.  Use an if statement to check if their answer is correct
-		
-		// 4.  if the user's answer is correct
-		
-		// -- add one to their score 
-		
-		// 5.  Create more questions by repeating steps 1, 2, and 3 below. 
-		
-		// 6.  After all the questions have been asked, print the user's score 
-		
+	String ans = JOptionPane.showInputDialog("What is the capital of Hungary?");
+
+		if(ans.equalsIgnoreCase("Budapest")) {
+			score++;
+		}
+
+	String ans2 = JOptionPane.showInputDialog("What is the capital of Hungary?");
+
+		if(ans2.equalsIgnoreCase("Budapest")) {
+			score++;
+		}
+	String ans3 = JOptionPane.showInputDialog("What is the capital of Hungary?");
+
+		if(ans3.equalsIgnoreCase("Budapest")) {
+			score++;
+		}
+	String ans4 = JOptionPane.showInputDialog("What is the capital of Hungary?");
+
+		if(ans4.equalsIgnoreCase("Budapest")) {
+			score++;
+		}
+	String ans5 = JOptionPane.showInputDialog("What is the capital of Hungary?");
+
+		if(ans5.equalsIgnoreCase("Budapest")) {
+			score++;
+		}
+		JOptionPane.showMessageDialog(null, "Congratulations! Your score is " + score + "!");
 	}
 }
