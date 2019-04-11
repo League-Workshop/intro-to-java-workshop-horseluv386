@@ -15,14 +15,14 @@ public class QuizGame {
 			score++;
 		}
 
-	String ans2 = JOptionPane.showInputDialog("What is the capital of Hungary?");
+	String ans2 = JOptionPane.showInputDialog("What was the official first state of the United States?");
 
-		if(ans2.equalsIgnoreCase("Budapest")) {
+		if(ans2.equalsIgnoreCase("Delaware")) {
 			score++;
 		}
-	String ans3 = JOptionPane.showInputDialog("What is the capital of Hungary?");
+	String ans3 = JOptionPane.showInputDialog("Calculate 13 x 15?");
 
-		if(ans3.equalsIgnoreCase("Budapest")) {
+		if(ans3.equalsIgnoreCase("195")) {
 			score++;
 		}
 	String ans4 = JOptionPane.showInputDialog("What is the capital of Hungary?");
@@ -35,6 +35,11 @@ public class QuizGame {
 		if(ans5.equalsIgnoreCase("Budapest")) {
 			score++;
 		}
-		JOptionPane.showMessageDialog(null, "Congratulations! Your score is " + score + "!");
+		
+	if(score>=4) {
+	 JOptionPane.showMessageDialog(null, "Your score is " + score + "! Good job!");
+	}
+	else {JOptionPane.showMessageDialog(null, "Your score is " + score + ". Better luck next time!");
+	}
 	}
 }
